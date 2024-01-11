@@ -1,0 +1,6 @@
+<% if @user %>
+  <h1>Welcome, User <%= @user.id %></h1>
+  <%= button_to 'Logout', logout_path, method: :delete, class: 'btn btn-danger' %>
+<% else %>
+  <p>User not found.</p>
+<% end %>
